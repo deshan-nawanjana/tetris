@@ -1,0 +1,66 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Teris 2.0</title>
+<style>
+body {
+	background:rgba(21,21,21,1);
+}
+.bx {
+	width:300px;
+	height:600px;
+}
+.r {
+	background:rgba(26,26,26,1);
+	width:300px;
+	height:30px;
+}
+.b {
+}
+.t_0 {
+	width:30px;
+	height:30px;
+	float:left;
+	box-shadow:inset 0px 0px 0px 1px rgba(43,43,43,1);
+}
+.t_x {
+	width:30px;
+	height:30px;
+	float:left;
+	background-color:rgba(255,255,255,0.4);
+	box-shadow:inset 0px 0px 0px 1px rgba(43,43,43,1);
+}
+</style>
+<script src="ctrl.js"></script>
+</head>
+<body onkeydown="mvKey(event)">
+
+
+Score : <span id="s"></span><br>
+
+
+
+<center><div id="bx"></div></center>
+
+
+
+
+
+<script src="gpd.js"></script>
+<script src="t_1.js"></script>
+<script src="t_2.js"></script>
+<script src="t_3.js"></script>
+
+<script src="main.js"></script>
+<script src="move.js"></script>
+<script src="chks.js"></script>
+<script src="lines.js"></script>
+
+<script>
+setup();
+putObj();
+draw();
+setInterval(flowObj,1000);
+</script>
+</body>
+</html>
